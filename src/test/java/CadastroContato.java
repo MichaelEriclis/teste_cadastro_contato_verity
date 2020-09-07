@@ -35,7 +35,7 @@ public class CadastroContato {
         $("textarea[placeholder='Mensagem']").scrollIntoView(true);
         screenshot("Enviar");
         $(By.id("comp-jt789auflabel")).click();
-        $("span[style='color:#0062BA;']").shouldBe(visible);
+        $("span[style='color:#0062BA;'/*'Mensagem enviada com sucesso!']").shouldBe(visible);
         screenshot("Teste Concluido com sucesso");
 
     }
